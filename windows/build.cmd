@@ -16,4 +16,12 @@ vcpkg install --triplet x64-windows-static --recurse^
  libpng[core] expat[core] pixman[core] freetype[core,zlib] harfbuzz[core]^
  libvorbis[core] libsndfile[core] wildmidi[core] libxmp-lite[core]^
  speexdsp[core] mpg123[core] opusfile[core] fluidsynth-easyrpg[core]^
- sdl2-image[core] icu-easyrpg[core] nlohmann-json[core] fmt[core]
+ sdl2-image[core] icu-easyrpg[core] nlohmann-json[core] fmt[core]^
+ 
+:: MMO-Fork - Build 32-bit libraries
+vcpkg install --triplet x86-windows-static --recurse^
+ libsodium
+
+:: MMO-Fork - Build 64-bit libraries
+vcpkg install --triplet x64-windows-static --recurse^
+ libsodium
